@@ -1,0 +1,157 @@
+.ai-image-generator {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 1.333rem;
+}
+
+.header {
+    font-size: 3.5rem;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+
+.header span {
+    color: #de1b89;
+    font-weight: 600;
+}
+
+.img-loading {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 20rem;
+    margin-bottom: 1.333rem;
+}
+
+.search-box {
+    display: flex;
+    width: 50rem;
+    height: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3.125rem;
+    background: #1f3550;
+}
+
+.search-input {
+    width: 30.5rem;
+    height: 3.125rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.125rem;
+    color: white;
+    padding-left: 2.188rem;
+    margin-right: 2.188rem;
+}
+
+.search-input::placeholder {
+    color: #999;
+    font-size: 1.4rem;
+}
+
+.generate-btn,
+.download-btn,.next-variation-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+    height: 4rem;
+    font-size: 1.25rem;
+    border-radius: 3.125rem;
+    background: #de1b89;
+    cursor: pointer;
+    margin-right: 0.625rem;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+.loading-spinner {
+    border: 8px solid #0f1b21;
+    border-top: 8px solid #de1b89;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 2rem 0;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  
+/* Tablet Styles */
+@media only screen and (max-width: 768px) {
+    .search-box {
+        max-width: 90%;
+    }
+
+    .generate-btn,
+    .download-btn,
+    .next-variation-btn {
+        width: 18vw;
+        height: 6.3vw;
+        margin-right: .5rem;
+        padding: 1vw;
+        font-size: 2.5vw;
+    }
+    .header {
+        font-size: 3vw;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 580px) {
+    .header {
+        font-size: 10vw;
+    }
+    .img-loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 57%;
+        max-width: 70%;
+        margin: 0 auto;
+        display: block;
+    }
+
+
+    .search-box {
+        width: 100%;
+        border-radius: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        background-color: #0f1b21;
+    }
+
+    .search-input {
+        width: 83%;
+        margin-right: 0;
+        background: #1f3550;
+        border-radius: 2rem;
+    }
+
+    .search-input::placeholder{
+        font-size: 4vw;
+    }
+
+    .generate-btn,
+    .download-btn,
+    .next-variation-btn {
+        margin-top: .8rem;
+        width: 40%;
+        font-size: 3.8vw;
+        font-weight: 500;
+    }
+}
