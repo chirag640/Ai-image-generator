@@ -1,7 +1,7 @@
 # AI Image Generator
 
-![image](https://github.com/chirag640/Ai-image-generator/assets/111826944/82c6018d-7065-4563-bba5-fe9ce334e1f8)
-![image](https://github.com/chirag640/Ai-image-generator/assets/111826944/b7768b90-5bd4-4acb-8498-2789ee24c91f)
+![image](https://github.com/chirag640/Ai-image-generator/assets/111826944/98fb67fe-d3c8-4462-a3fc-f50691248a09)
+
 
 
 
